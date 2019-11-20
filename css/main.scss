@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    /* outline: 1px yellow solid; */
+}
+
+:root {
+    --main-color: #C70039;
+}
+
+::selection {
+    color: white;
+    background: var(--main-color);
+}
+
+body {
+    height: 200vh;
+}
+
+nav {
+    z-index: 5;
+    font-family: "Poppins", sans-serif;
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
+    padding: 10px;
+    height: 40px;
+    position: sticky;
+    background: white;
+    top: 0;
+
+    p {
+        font-size: 20px;
+        padding: 5px;
+        float: left;
+        
+        .fa-circle {
+            color: red;
+            margin-right: 5px;
+        }
+    }
+
+    .links ul {
+        float: right;
+        list-style-type: none;
+
+        li {
+            float: left;
+            margin-right: 30px;
+            margin-top: 10px;
+
+            a {
+                color: black;
+                text-decoration: none;
+                transition: .5s;
+                width: 200px;
+            }
+
+            .normal::after {
+                content: "";
+                display: block;
+                background: var(--main-color);
+                width: 0%;
+                height: 1px;
+                transition: .5s;
+            }
+
+            .normal:hover {
+                color: var(--main-color);
+            }
+
+            .normal:hover::after {
+                width: 100%;
+            }
+
+            .join {
+                color: var(--main-color);
+                border: 2px solid var(--main-color);
+                padding: 1.5px 2rem;
+                border-radius: 45px;
+                transition: .5s;
+            }
+
+            .join:hover {
+                background: var(--main-color);
+                color: white;
+            }
+        }
+    }
+}
+
+.main {
+    background-color: #000;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 150%;
+
+    .background {
+        opacity: .5;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    h1 {
+        font-family: "Poppins";
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 50%;
+        color: white;
+        text-shadow: 0 0 10px rgb(0,0,0);
+        z-index: 0;
+
+        .fa-circle {
+            color: red;
+            margin-right: 5px;
+        }
+    }
+
+    h1::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+    }
+}
