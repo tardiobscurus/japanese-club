@@ -22,6 +22,34 @@ body {
     // background-color: #eee;
 }
 
+a[href*="https://"] {
+    width: 100%;
+    padding: 1rem 3rem;
+    background-color: #fefefe;
+    border-radius: 2.5px;
+    box-shadow: 0 0 5px rgba(0,0,0,.25);
+    text-align: left;
+} a[href*="https://"]::before {
+    content: url(../svg/globe-americas-solid.svg);
+    display: inline-block;
+    width: 13px;
+    padding: 0 4px;
+}
+
+a[href*=".pdf"] {
+    width: 100%;
+    padding: 1rem 3rem;
+    background-color: #fefefe;
+    border-radius: 2.5px;
+    box-shadow: 0 0 5px rgba(0,0,0,.25);
+    text-align: left;
+} a[href*=".pdf"]::before {
+     content: url("../svg/file-pdf-solid.svg");
+     display: inline-block;
+     width: 13px;
+     padding: 0 4px;
+}
+
 nav {
     z-index: 5;
     font-family: "Poppins", sans-serif;
@@ -151,14 +179,17 @@ nav {
     font-family: "Source Sans Pro", sans-serif;
     color: #333;
 
+    h1, h2 {
+        font-family: "Poppins", sans-serif;
+    }
+
     a {
-        color: var(--main-color);
+        color: #1a237e;
         transition: .2s;
-        text-decoration: none;
     }
 
     a:hover {
-        color: #ff0048
+        color: #6d64c9
     }
 
     .dates {
@@ -166,7 +197,7 @@ nav {
         font-size: 125%;
     }
 
-    .welcome h2 {
+    .welcome {
         padding: 2rem 0;
         text-align: center;
         font-family: "Poppins", sans-serif;
@@ -184,8 +215,61 @@ nav {
             background: #efefee;
             box-shadow: 0 0 5px rgba(0,0,0,.25);
         }
-    }
 
+    }
+    
+    .fullLessons {
+        display: grid;
+        grid-template-columns: 20% auto;
+        grid-gap: 10px;
+        margin: 0 2rem;
+
+        .lesson {
+            text-align: left;
+            margin: 2rem 0;
+            padding: 2rem;
+            background: #efefee;
+            box-shadow: 0 0 5px rgba(0,0,0,.25);
+            line-height: 1.25rem;
+        }
+
+        .updates {
+            background: white;
+            box-shadow: none;
+            padding: 20px 0 0 20px;
+            
+            .update {
+                padding: 2rem;
+                background-color: #efefee;
+                box-shadow: 0 0 5px rgba(0,0,0,.25);
+                margin-bottom: 20px;
+
+                .icon {
+                    float: left;
+                    font-size: 48px;
+                    margin-right: 10px;
+                    color: var(--main-color);
+                    transform: scaleX(-1)
+                }
+
+                h2 {
+                    font-size: 150%;
+                }
+
+                .small-info {
+                    margin: .5rem 0;
+                    font-size: 14px;
+                }
+
+                .due {
+                    font-size: 115%;
+                    font-family: "Poppins", sans-serif;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    
     .goal {
         padding: 2rem 0;
         text-align: center;
