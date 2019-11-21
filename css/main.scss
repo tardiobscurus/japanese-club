@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap');
 
 *, *::before, *::after {
     margin: 0;
@@ -17,7 +18,7 @@
 }
 
 body {
-    height: 200vh;
+    height: 100%;
     // background-color: #eee;
 }
 
@@ -113,10 +114,17 @@ nav {
         color: white;
         text-shadow: 0 0 10px rgb(0,0,0);
         z-index: 0;
+        line-height: 2.25rem;
 
         .fa-circle {
             color: red;
             margin-right: 5px;
+        }
+
+        span {
+            font-size: 20px;
+            font-family: "Noto Sans JP", sans-serif;
+            text-decoration: none;
         }
     }
 
@@ -199,14 +207,19 @@ nav {
             color: white
         }
     }
+
+    iframe {
+        margin-top: 2rem;
+    }
 }
 
 footer {
     padding: 1.5rem 12rem;
     color: #eee;
     background: #333;
-    text-align: justify;
+    text-align: center;
     font-family: "Source Sans Pro", sans-serif;
+    font-size: 11px;
     
     a {
         color: #ccc;
