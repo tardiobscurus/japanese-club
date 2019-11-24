@@ -1,7 +1,21 @@
+var random = Math.floor(Math.random() * 4);
+const homebackground = document.querySelector(".main .homebackground");
+console.log(random);
+
+// if (random === 0) {
+//     homebackground.src = "images/backgrounds/home/timelapse.gif";
+// } else if (random === 1) {
+//     homebackground.src = "images/backgrounds/home/timelapse2.gif";
+// } else if (random === 2) {
+//     homebackground.src = "images/backgrounds/home/tokyo.gif"
+// } else if (random === 3) {
+//     homebackground.src = "images/backgrounds/home/tokyo2.gif"
+// }
+
+
 window.addEventListener("scroll", () => {
     const background = document.querySelector(".main .background");
     const titleh1 = document.querySelector(".main h1");
-    const arrow = document.querySelector(".main h2");
     var scroll = window.pageYOffset;
     var titleMove = scroll * .55;
     var backgroundMove = scroll * .7;

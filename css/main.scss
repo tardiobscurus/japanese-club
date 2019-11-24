@@ -27,7 +27,7 @@ a[href*="https://"] {
     padding: 1rem 3rem;
     background-color: #fefefe;
     border-radius: 2.5px;
-    box-shadow: 0 0 5px rgba(0,0,0,.25);
+    box-shadow: 0 0 2px rgba(0,0,0,.25);
     text-align: left;
 } a[href*="https://"]::before {
     content: url(../svg/globe-americas-solid.svg);
@@ -41,10 +41,24 @@ a[href*=".pdf"] {
     padding: 1rem 3rem;
     background-color: #fefefe;
     border-radius: 2.5px;
-    box-shadow: 0 0 5px rgba(0,0,0,.25);
+    box-shadow: 0 0 2px rgba(0,0,0,.25);
     text-align: left;
 } a[href*=".pdf"]::before {
      content: url("../svg/file-pdf-solid.svg");
+     display: inline-block;
+     width: 13px;
+     padding: 0 4px;
+}
+
+a[href*="mailto:"] {
+    width: 100%;
+    padding: 1rem 3rem;
+    background-color: #fefefe;
+    border-radius: 2.5px;
+    box-shadow: 0 0 2px rgba(0,0,0,.25);
+    text-align: left;
+} a[href*="mailto:"]::before {
+     content: url("../svg/envelope-solid.svg");
      display: inline-block;
      width: 13px;
      padding: 0 4px;
@@ -311,5 +325,13 @@ footer {
 
     a:hover {
         color: #eee;
+    }
+
+    a[href*="mailto:"] {
+        padding: 0;
+        background: none;
+    } a[href*="mailto:"]::before {
+         content: "";
+         display: none;
     }
 }
