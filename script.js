@@ -22,7 +22,7 @@ window.addEventListener("scroll", () => {
 
     titleh1.style.transform = `translate3d(0, ${titleMove}px, 0)`;
     titleh1.style.opacity = `${100 - titleMove * .4}%`;
-    titleh1.style.lineHeight = `${titleMove}rem`;
+    titleh1.style.lineHeight = `${titleMove + 1.95 / .4}rem`;
     
     console.log(scroll);
 
