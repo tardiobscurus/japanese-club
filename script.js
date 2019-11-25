@@ -20,6 +20,5 @@ window.addEventListener("scroll", () => {
     var backgroundMove = scroll * .7;
 
     titleh1.style.transform   = `translate3d(0, ${titleMove}px, 0)`;
-    titleh1.style.lineHeight  = `${titleMove + 1.5 * .1}rem`;
     background.style.transform = `translate3d(0, ${backgroundMove}px, 0)`;
 });
