@@ -1,6 +1,5 @@
-var random = Math.floor(Math.random() * 4);
-const homebackground = document.querySelector(".main .homebackground");
-console.log(random);
+// var random = Math.floor(Math.random() * 4);
+// const homebackground = document.querySelector(".main .homebackground");
 
 // if (random === 0) {
 //     homebackground.src = "images/backgrounds/home/timelapse.gif";
@@ -14,17 +13,13 @@ console.log(random);
 
 
 window.addEventListener("scroll", () => {
-    const background = document.querySelector(".main .background");
-    const titleh1 = document.querySelector(".main h1");
-    var scroll = window.pageYOffset;
-    var titleMove = scroll * .55;
+    const background   = document.querySelector(".main .background");
+    const titleh1      = document.querySelector(".main h1");
+    var scroll         = window.pageYOffset;
+    var titleMove      = scroll * .55;
     var backgroundMove = scroll * .7;
 
-    titleh1.style.transform = `translate3d(0, ${titleMove}px, 0)`;
-    titleh1.style.opacity = `${100 - titleMove * .4}%`;
-    titleh1.style.lineHeight = `${titleMove + 1.5 * .1}rem`;
-    
-    console.log(scroll);
-
+    titleh1.style.transform   = `translate3d(0, ${titleMove}px, 0)`;
+    titleh1.style.lineHeight  = `${titleMove + 1.5 * .1}rem`;
     background.style.transform = `translate3d(0, ${backgroundMove}px, 0)`;
 });
