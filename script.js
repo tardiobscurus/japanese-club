@@ -19,6 +19,7 @@ window.addEventListener("scroll", () => {
     var titleMove      = scroll * .55;
     var backgroundMove = scroll * .7;
 
-    titleh1.style.transform   = `translate3d(0, ${titleMove}px, 0)`;
+    titleh1.style.transform    = `translate3d(0, ${titleMove}px, 0)`;
+    titleh1.style.opacity      = `${100 - titleMove * .4}%`;
     background.style.transform = `translate3d(0, ${backgroundMove}px, 0)`;
 });

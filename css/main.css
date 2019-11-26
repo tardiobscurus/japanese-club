@@ -24,6 +24,10 @@ body {
   height: 100%;
 }
 
+rt {
+  font-size: 50%;
+}
+
 a[href*="https://"] {
   width: 100%;
   padding: 1rem 3rem;
@@ -73,6 +77,14 @@ a[href*="mailto:"]::before {
   display: inline-block;
   width: 13px;
   padding: 0 4px;
+}
+
+.line {
+  width: 40px;
+  height: 1.5px;
+  border-radius: 5px;
+  margin: -4px 0 2px 0;
+  background-color: #c7003880;
 }
 
 nav {
