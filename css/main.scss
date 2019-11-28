@@ -79,7 +79,7 @@ a[href*="mailto:"] {
 nav {
     z-index: 5;
     font-family: "Poppins", sans-serif;
-    box-shadow: 0 0 5px rgba(0,0,0,.5);
+    box-shadow: 0 0 2.5px 2px rgba(0,0,0,.25);
     padding: 10px;
     height: 40px;
     position: sticky;
@@ -202,7 +202,7 @@ nav {
 
 .content {
     line-height: 2rem;
-    padding: 1rem 8rem;
+    padding: 1rem 15%;
     font-family: "Source Sans Pro", sans-serif;
     color: #333;
 
@@ -263,7 +263,7 @@ nav {
         .updates {
             background: white;
             box-shadow: none;
-            padding: 20px 0 0 20px;
+            margin: 2.5px 0 0 0;
             
             .update {
                 padding: 2rem;
@@ -319,8 +319,9 @@ nav {
         }
     }
 
-    iframe {
-        margin-top: 2rem;
+    .signup {
+        margin: 2rem 0;
+        height: 225vh;
     }
 }
 

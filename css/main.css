@@ -90,8 +90,8 @@ a[href*="mailto:"]::before {
 nav {
   z-index: 5;
   font-family: "Poppins", sans-serif;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 2.5px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 2.5px 2px rgba(0, 0, 0, 0.25);
   padding: 10px;
   height: 40px;
   position: -webkit-sticky;
@@ -218,7 +218,7 @@ nav .links ul li .join:hover {
 
 .content {
   line-height: 2rem;
-  padding: 1rem 8rem;
+  padding: 1rem 15%;
   font-family: "Source Sans Pro", sans-serif;
   color: #333;
 }
@@ -288,7 +288,7 @@ nav .links ul li .join:hover {
   background: white;
   -webkit-box-shadow: none;
           box-shadow: none;
-  padding: 20px 0 0 20px;
+  margin: 2.5px 0 0 0;
 }
 
 .content .fullLessons .updates .update {
@@ -346,8 +346,9 @@ nav .links ul li .join:hover {
   color: white;
 }
 
-.content iframe {
-  margin-top: 2rem;
+.content .signup {
+  margin: 2rem 0;
+  height: 225vh;
 }
 
 footer {
